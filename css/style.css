@@ -1,0 +1,66 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	/* Localización de la imagen */
+	background-image: url('../images/jaguar-xe.png');
+	/* La imagen se centra horizontal y verticamente todo el tiempo */
+	background-position: center center;
+	/* La imagen no se repite en los espacios en blanco */
+	background-repeat: no-repeat;
+	/* La imagen es fija en la ventana, así no se mueve cuando el contenido de alto es modificado */
+	background-attachment: fixed;
+	/* Permite que la imagen de fondo se escale de acuerdo en el tamaño del contenido */
+	background-size: cover;
+}
+
+div.container {
+	background-color: rgba(0, 0, 0, 0.7);
+	color: white;
+	width: 600px;
+	height: 260px;
+	border-radius: 10px;
+	margin: 40px 30px;
+}
+
+@media (max-width: 600px) {
+	div.container {
+		width: 90%;
+		height: 90%;
+	}
+
+	div.container p {
+		font-size: 14px;
+	}
+
+	body {
+		margin: 30px;
+	}
+}
+
+.interior {
+	padding: 10px 30px;
+	font-family: 'Roboto', sans-serif;
+	line-height: 1.5;
+	width: 100%;
+}
+
+div h2 {
+	font-size: 25px;
+}
+
+div button {
+	width: 150px;
+	height: 40px;
+	cursor: pointer;
+	background-color: #DB3030;
+	color: white;
+	border: none;
+	border-radius: 3px;
+}
+
+
+
+
+
